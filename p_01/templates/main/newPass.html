@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Password</title>
+</head>
+<body>
+    <div class="row p-5">
+
+        <div id="cnt" class="content bg-light p-5 mx-auto">
+            <form  method="post">
+    {% csrf_token %}
+             <div class="p-3">
+                <input type="text" placeholder="Enter Mobile No/Email">
+            </div>
+             <div class="p-3">
+                <input type="text" placeholder="Enter OTP">
+            </div>
+             <div class="text-center">
+                <button type="submit">Submit</button>
+             </div>
+    
+            </form>
+        </div>
+        </div>
+</body>
+</html>

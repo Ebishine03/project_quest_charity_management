@@ -1,0 +1,23 @@
+         <!-- <div class="form-group">
+<input class="form-control" id="{{ form.username }}" maxlength="30" name="{{ form.username }}" value="{{ form.username }}" type="text" /> 
+            {{form.username}}                   
+           <input class="form-control" type="text">
+        </div>
+         <div >
+            <input class="form-control" type="text">
+            {{form.email}}
+        </div>
+        <div>
+            <input class="form-control" type="text">
+            {{form.password1}}
+        </div>
+        <div    >
+            <input class="form-control" type="text">
+            
+            {{form.password2}}
+        </div> -->
+
+
+
+
+        
