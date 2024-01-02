@@ -5,17 +5,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
     <link rel="stylesheet" href="{% static 'css/index.css' %}">
-    {% block css%}{% endblock %}
+    <script src="{% static 'js/carousel.js' %}"></script>
+    {% block css %}{% endblock %}
+    {% block js %}{% endblock %}
     <title>{% block title %} Charity Management {% endblock %}</title>
 </head>
 <body>
@@ -56,60 +53,56 @@
           </div>
         </div>
       </nav>
+{% block slider %} {% endblock %}
 {% block content %} {% endblock %}
 
 
-<div class="d-flex flex-column h-100">
+<div class="p-0 m-0">
 
     <footer class="w-100 py-4 flex-shrink-0">
-        <div class="container py-4">
-            <div class="row gy-4 gx-5">
-                <div class="col-lg-3 col-md-6">
-                  <ul class="list-unstyled"><li class="text-center"><img src="https://img.icons8.com/?size=50&id=3723&format=png" alt="" srcset="">  <h4 class=" ">CONTACT US</h4></li></ul>
+        <div class="">
+            <div class="row ">
+                <div class="col-lg-3 col-md-6 mt-3 ">
+                  <ul class="list-unstyled"><li class="ml-3"><img src="https://img.icons8.com/?size=50&id=3723&format=png" alt="" srcset="">  <h4 class=" ">CONTACT US</h4></li></ul>
                    
-                    <p class="text-muted text-center">Hopeful Hearts Charity Org <br>Trivandrum <br>Kerala <br>+91 6253424521 <br>hrc@gmail.com</p>
+                    <p class="text-muted ml-3 ">Hopeful Hearts Charity Org <br>Trivandrum <br>Kerala <br>+91 6253424521 <br>hrc@gmail.com</p>
                    
                 </div>
-                <div class="col-lg-3 col-md-6">
-                  <ul class="list-unstyled"><li class="text-center"><img src="https://img.icons8.com/?size=50&id=40390&format=png" alt="" srcset=""> <h4 class=" ">LEADERBOARD</h4></li></ul>
+                <div class="col-lg-3 col-md-6 mt-3">
+                  <ul class="list-unstyled"><li class="ml-3"><img src="https://img.icons8.com/?size=50&id=40390&format=png" alt="" srcset=""> <h4 class=" ">LEADERBOARD</h4></li></ul>
                  
-                    <ul class="list-unstyled text-center ">
+                    <ul class="list-unstyled  ml-3">
                         <li><h6>CEO - Ebi Shine</h6></li>
                         <li><h6>Chairman - Elon Musk</h6></li>
-                        <li><h6>Manager -......</h6></li>
-                        <li><h6>Frontline Supervisors -......</h6></li>
+                        <li><h6>Manager - Mark Zuckerberg</h6></li>
+                        <li><h6>Frontline Supervisors -Jeff Bezos</h6></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                  <ul class="list-unstyled"><li class="text-center"><img src="https://img.icons8.com/?size=50&id=10993&format=png" alt="" srcset=""><h4 class=" ">STAY CONNECTED</h4></li></ul>
+                <div class="col-lg-3 col-md-6 mt-3">
+                  <ul class="list-unstyled"><li class="ml-3"><img src="https://img.icons8.com/?size=50&id=10993&format=png" alt="" srcset=""><h4 class=" ">STAY CONNECTED</h4></li></ul>
                   
-                   <div class="row ">
-                      <div class="col-4 col-md-4 text-center"> 
-                
-                        <img  src="https://img.icons8.com/?size=48&id=118497&format=png">
+                  <div class="row p-3">
+
+                    <div class="col-4 col-md-4  mt-3"><a href="" > <img width="32px" height="32px" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="" srcset=""></a></div>
+                    <div class="col-4 col-md-4  mt-3"><a href=""><img width="35px" height="35px" src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-round-color-icon.png" alt="" srcset=""></a></div>
+                    <div class="col-4 col-md-4   mt-3"><a href="" ><img width="30px" height="30px" src="https://uxwing.com/wp-content/themes/uxwing/download/checkmark-cross/close-square-icon.png" alt="" srcset=""></a></div>
                   </div>
-                  <div class="col-4 col-md-4 text-center"> 
-                    <img src="https://img.icons8.com/?size=48&id=32323&format=png">
-                
-                  </div>
-                  <div class="col-4 col-md-4 text-center"> 
-                
-                    <img src="https://img.icons8.com/?size=50&id=phOKFKYpe00C&format=png">
-                  </div>
+
                 </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                  <ul class="list-unstyled "><li class="text-center"><img src="https://img.icons8.com/?size=50&id=11642&format=png"><h4 class=" ">NOTIFICATION</h4></li></ul>
+                <div class="col-lg-3 col-md-6  mt-3">
+                  <ul class="list-unstyled "><li class="ml-3"><img src="https://img.icons8.com/?size=50&id=11642&format=png"><h4 class=" ">NOTIFICATION</h4></li></ul>
                   
-                    <p class="small text-muted">Enter your email or phone to get notificattion</p>
+                    <p class="small text-muted ml-3">Enter your email or phone to get notification</p>
                     <form action="#">
-                        <div class="input-group mb-3">
-                            <input class="form-control" type="text" placeholder="Recipient's phone/email" aria-label="Recipient's phone/email" aria-describedby="button-addon2">
-                            <button class="btn btn-primary" id="button-addon2" type="button"><i class="fas fa-paper-plane"></i></button>
+                        <div class=" mb-3 ml-3">
+                            <input class="form-control" type="text" placeholder="Recipient's phone/email" >
+                            
+                            <button class="btn btn-primary mt-3 w-50" id="button-addon2" type="button">Submit</button>
+                          
                         </div>
                     </form>
                 </div>
-                <h3 class="text-center ">'' Its not how much we give ,<br>but how much love we put into giving'' <br> --Mother Teresa</h3>
+                <h3 id="q" class=" q text-center ">'' Its not how much we give ,<br>but how much love we put into giving'' <br> --Mother Teresa</h3>
             </div>
         </div>
     </footer>
