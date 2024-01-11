@@ -12,21 +12,49 @@ body{
 }
 
 a {
-  color: rgb(30, 13, 33);
+  color:#fff;
   text-decoration: none;
   transition: all 0.3s;
+  font-size: 14px;
+  
 }
 
 a:hover, a:focus {
   text-decoration: none;
 }
 
+/* .navbar{
+  box-shadow: 1px 10px 10px rgb(228, 234, 228) ;
+  height: 39rem;
+ background-image: url('../images/bg_1.jpg');
+ background-repeat:no-repeat;
+background-size:cover;
+background-attachment: fixed;
+background-position: center;
 
+ opacity: 2;
+ 
+} */
 
-
-footer {
-  background: #212529;
+#navbarSupportedContent{
+  color: ghostwhite;
 }
+.nitem{
+  color: whitesmoke;
+}
+.nav-link active{
+  color: rebeccapurple;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+  color:rgb(24, 4, 4);
+  opacity: 2 ;
+
+}
+
+/* .footer {
+  background: #212529;
+  background-color: rgb(3,8,32);
+} */
 
 .material-symbols-outlined {
     color:rgb(202, 3, 3);
@@ -81,5 +109,30 @@ font-family: 'Caveat', cursive;;
   color: #212529;
 }
 
+#nav{
+  color: red;
+}
 
-
+.my-nav{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  }
+  
+  .carousel-item {
+    height: 100vh;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  body{
+   margin: 0;
+   padding: 0;
+  }
+  .carousel-item{height: 560px;}
+  #mycarousel{
+    box-shadow: 1px 10px 10px rgb(228, 234, 228) ;
+  }
