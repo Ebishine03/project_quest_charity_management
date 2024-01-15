@@ -1,88 +1,34 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Caveat:wght@500&family=Kdam+Thmor+Pro&family=Lato:wght@300&family=Pacifico&family=Poppins:wght@300&display=swap');
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Kdam+Thmor+Pro&family=Lato:wght@300&family=Pacifico&family=Poppins:wght@300&display=swap');
 body{
     margin: 0;
     padding: 0;
 }
+.row{
+  margin: 0;
+  padding: 0;
+}
 .text-small {
   font-size: 0.9rem;
 }
-
-a {
-  color:#fff;
-  text-decoration: none;
-  transition: all 0.3s;
-  font-size: 14px;
-  
-}
-
 a:hover, a:focus {
   text-decoration: none;
 }
 
-/* .navbar{
-  box-shadow: 1px 10px 10px rgb(228, 234, 228) ;
-  height: 39rem;
- background-image: url('../images/bg_1.jpg');
- background-repeat:no-repeat;
-background-size:cover;
-background-attachment: fixed;
-background-position: center;
-
- opacity: 2;
- 
-} */
-
-#navbarSupportedContent{
-  color: ghostwhite;
-}
-.nitem{
-  color: whitesmoke;
-}
-.nav-link active{
-  color: rebeccapurple;
-}
-.navbar-expand-lg .navbar-nav .nav-link{
-  color:rgb(24, 4, 4);
-  opacity: 2 ;
-
-}
-
-/* .footer {
-  background: #212529;
-  background-color: rgb(3,8,32);
-} */
-
 .material-symbols-outlined {
-    color:rgb(202, 3, 3);
-    
-    
-    
+    color:rgb(202, 3, 3);    
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
- 
-  
 }
 #qts{
     font-family: 'Pacifico', cursive;
     ;
     font-weight: lighter;
 }
-
-
-/* ==========================================
-    FOR DEMO PURPOSE
-  ========================================== */
-
-
-.text-small {
-  font-size: 0.9rem;
-}
-
 
 a:hover, a:focus {
   text-decoration: none;
@@ -101,38 +47,45 @@ a:hover, a:focus {
 
 footer {
   background: whitesmoke;
-  
-  
 }
 #q {
 font-family: 'Caveat', cursive;;
   color: #212529;
 }
 
-#nav{
-  color: red;
-}
 
-.my-nav{
-  position: absolute;
-  z-index: 10;
-  width: 100%;
-  }
+
+.navbar{
+  transition: all 0.6s;
+}
+.navbar-scrolled{
+  background: #03011b;
+  box-shadow: 0 0 10px 5px rgb(235, 231, 231);
+}
+.offcanvas{
+/* background: #dbe0de;
+width: 100px;
+ */
+ width: 0px;
+
+}
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+  transform: none;
+  background-image: url('../images/14731307_rm218-bb-07.jpg');
+  background-size: cover;
+  width: 250px;
+  color: #ebf0f0;
+  transition: ease-in 0.5s;
   
-  .carousel-item {
-    height: 100vh;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: rgb(217 230 229);
+  padding: 23px;
+}
+.i1{
+
   
-  body{
-   margin: 0;
-   padding: 0;
-  }
-  .carousel-item{height: 560px;}
-  #mycarousel{
-    box-shadow: 1px 10px 10px rgb(228, 234, 228) ;
-  }
+}
+.i2{
+ 
+}
