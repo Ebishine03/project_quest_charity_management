@@ -7,26 +7,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{% block title %} Charity Management {% endblock %}</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="{% static 'css/index.css' %}">
-  <script src="{% static 'js/index.js' %}"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
-    integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  {% block css %}{% endblock %}
-  {% block js %}{% endblock %}
-  {% block style %} {% endblock %}
+{% block style %}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+
+{% endblock %}
+
 
 
 </head>
 
 <body>
+  
   
   <nav class="navbar navbar-expand-lg fixed-top  ">
     <div class="container-fluid">
@@ -74,15 +72,15 @@
       </div>
 
     </div>
-    </div>
+    </div> 
   </nav>
   
-  <div style="height: 600px;" id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+  <div style="height: 600px;" id="mycarousel1" class="carousel slide carousel-fade" data-bs-ride="carousel">
     
     <div style="height: 600px ;" class="carousel-inner">
       <div class="carousel-item active">
-
-        <img style="height: 600px;" src="{% static 'images/hand-holding-coin-bank-symbolizing-wealth-growth-generated-by-ai.jpg' %}" class="d-block w-100 i1">
+        <img style="height: 600px; " src="https://preview.colorlib.com/theme/lovecare/images/bg_1.jpg" class="d-block w-100 i1">
+        <!-- <img style="height: 600px;" src="{% static 'images/hand-holding-coin-bank-symbolizing-wealth-growth-generated-by-ai.jpg' %}" class="d-block w-100 i1"> -->
         <div class="carousel-caption d-none d-md-block">
           <h1>The Smallest Act of Kindness is Worth <br>
             More Than the Grandest Intention</h1>
@@ -91,6 +89,7 @@
       </div>
       <div  class="carousel-item">
         <img style="height: 600px;" src="{% static 'images/smiling-children-different-ethnicities-learning-outdoors-generated-by-ai.jpg' %}" class="d-block w-100 i2">
+        <!-- <img style="height: 600px;" src="{% static 'images/smiling-children-different-ethnicities-learning-outdoors-generated-by-ai.jpg' %}" class="d-block w-100 i2"> -->
         <div class="carousel-caption d-none d-md-block">
          
              <h1 class="my-auto">To the Homeless & <br>Hopeless People</h1>
@@ -99,7 +98,8 @@
       </div>
 
       <div  class="carousel-item">
-        <img style="height: 600px;" src="https://img.freepik.com/premium-photo/generosity-compassion-volunteers-organizations-as-they-distribute-food-supplies-vulnerable-communities-emphasizing-power-collective-action-combating-hunger_505557-16078.jpg?w=740" class="d-block w-100 i3">
+        <!-- <img style="height: 600px;" src="{% static 'images/smiling-children-different-ethnicities-learning-outdoors-generated-by-ai.jpg' %}" class="d-block w-100 i2"> -->
+       <img style="height: 600px;" src="https://img.freepik.com/premium-photo/generosity-compassion-volunteers-organizations-as-they-distribute-food-supplies-vulnerable-communities-emphasizing-power-collective-action-combating-hunger_505557-16078.jpg?w=740" class="d-block w-100 i3"> 
         <div class="carousel-caption d-none d-md-block">
           <h1>GIVE A HAND <br>
           TO MAKE THE WORLD BETTER</h5>
@@ -109,9 +109,9 @@
     </div>
 
   </div>
-  <!-- <div class="fixed-top  hiddenDiv "> </div> -->
+  
 
-    {% block slider %} {% endblock %}
+   
     {% block content %} {% endblock %}
 
 
@@ -200,19 +200,21 @@
         </div>
       </footer>
     </div>
+    
 
-  
-<script>
-const nav1=document.querySelector('.navbar');
-  window.addEventListener('scroll',() =>{
-      if(window.scrollY >= 500){
-          nav1.classList.add('navbar-scrolled')
-      }
-      else if (window.scrollY < 500){
-          nav1.classList.remove('navbar-scrolled')
-      }
-  })</script>
-
+    {% block js %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+    integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{% static 'js/index.js' %}"></script>
+    {% endblock %}
+     
 </body>
 
 </html>

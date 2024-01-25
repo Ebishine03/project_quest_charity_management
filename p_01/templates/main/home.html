@@ -4,148 +4,10 @@
 {% block title %} Charity Management {% endblock %}
 
 {% block style %}
+{{ block.super }}
 <link rel="stylesheet" href="{% static 'css/home.css' %}">
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 {% endblock %}
-{% block js %}
-<script src="{% static 'js/home.js' %}"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-{% endblock %}
-{% block slider %}
-
-<!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div id="c-item" class="carousel-item active  ">
-      <img id="c-img" class="d-block w-100 " src="{% static 'images/s4.jpg' %}" alt="First slide">
-      <h4  class="overlay-txt mr -auto"> to the voluntary act of providing help, assistance, 
-        or support to those in need, typically in the form of financial aid,<br>
-         resources, or services. It is driven by compassion,
-         <br> goodwill, and a desire to contribute positively to the well-being of others or to address various <br>
-         social, humanitarian, or environmental issues.</h4>
-    </div>
-    <div id="c-item" class="carousel-item ">
-      <img id="c-img" class="d-block w-100 " src="{% static 'images/s3.jpg' %}" alt="Second slide">
-    </div>
-    <div id="c-item" class="carousel-item">
-      <img id="c-img" class="d-block w-100 " src="{% static 'images/slider1.jpg' %}" alt="Third slide">
-    </div>
-  </div>
-</div> -->
-
-
-{% endblock %}
-
 {% block content %}
-<script>
-  AOS.init();
-</script>
-
-<!-- <div class="content    ">
-  
-  <h1 class="m-2 p-5">
-    Why this organization..?
-  </h1>
-  <div class="row p-4 m-3"> 
-   
-
-      
-        <div class="col-md-6 mt-2 ">
-          <h3>Raise Awareness:</h3>
-          <h5>Increase awareness about the cause, issues, or projects the charity is working on. <br>
-            This involves providing information, statistics, <br>
-            and success stories to educate the public about the importance of the charity's work.</h5>
-        </div>
-        
-
-
-  <div class="col-md-6 mt-2">
-  <h3>Fundraising:</h3>
-  <h5>Facilitate online donations and fundraising campaigns. <br>
-    The website can serve as a platform to collect financial contributions from individuals, <br>
-    corporations, and other donors interested in supporting the charity's mission.</h5>
-
-</div>
-
-
-     
-  
-    
-     <div class="col-md-6 mt-2 ">
-    <h3>Communication:</h3>
-    <h5>Act as a communication hub between the charity and its stakeholders. <br>
-      This includes donors, volunteers, beneficiaries, and the general public. <br>
-      The website can provide updates, news, and reports on the charity's activities and impact.</h5>
-  </div>
-
-
-     
-
-
-  <div class="col-md-6 mt-2 ">
-  <h3>Transparency:</h3>
-  <h5>Foster transparency and accountability by sharing financial reports, project updates, and the overall impact
-    of the charity's work. This helps build trust among donors and stakeholders.
-  </h5>
-
-</div>
-
-
-     
-
-
-  <div class="col-md-6 mt-2 ">
-    <h3>Education:</h3>
-    <h5> Provide educational resources to inform visitors about the issues the charity addresses, potential
-      solutions, and the broader context of the charity's work. <br>
-      This could include articles, videos, and other multimedia content.
-    </h5>
-
-  </div>
-
-      
-
-  <div class="col-md-6 mt-2 ">
-  <h3>Advocacy:</h3>
-  <h5> Enable supporters to take action by providing resources for advocacy efforts. This might include
-    petitions,<br>
-    letter campaigns, or information on how individuals can engage with policymakers to promote positive change.
-  </h5>
-
-</div>
-
-
-
-        
-          <div class="col-md-6 mt-2 ">
-            <h3>Volunteer Engagement:</h3>
-            <h5>Recruit and manage volunteers by providing information on available opportunities, requirements, and the
-              application process. A charity website can also be used to coordinate and communicate with volunteers
-              effectively.</h5>
-    
-          </div>
-        
-
-      
-
-
-  
-  <div class="col-md-6 mt-2">
-    <h3>Community Building:</h3>
-    <h5>Create a sense of community among supporters. This can involve features like forums, social media
-      integration, and events to encourage engagement and networking among people who share an interest in the
-      charity's cause.
-    </h5>
-
-  </div>
- 
-
-
-
-    </div>
-
-
-
-</div> -->
 
 <div class="content">
   <div class="row m-5 p-2" data-aos="fade-up" data-aos-duration="5000">
@@ -296,7 +158,7 @@
 
 
           <div class="card">
-            <img class="card-img-top img"
+            <img class="card-img img"
               src="https://images.pexels.com/photos/6646940/pexels-photo-6646940.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Card image cap">
             <div class="card-body text-center">
@@ -312,7 +174,7 @@
 
 
           <div class="card">
-            <img class="card-img-top img"
+            <img class="card-img img"
               src="https://img.freepik.com/free-photo/side-view-man-working-as-real-estate-agent_23-2151065015.jpg?t=st=1704702413~exp=1704706013~hmac=3a1648ebb402a6491234b2289ad3106c05eda9e1ae856fd356aac0c3bbff1ad2&w=740"
               alt="Card image cap">
             <div class="card-body text-center">
@@ -329,7 +191,7 @@
 
 
           <div class="card">
-            <img class="card-img-top img"
+            <img class="card-img img"
               src="https://images.pexels.com/photos/6995212/pexels-photo-6995212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt="Card image cap">
             <div class="card-body text-center ">
@@ -347,7 +209,7 @@
 
 
           <div class="card">
-            <img class="card-img-top img"
+            <img class="card-img img"
               src="https://img.freepik.com/premium-photo/picture-person-getting-checkup-heart-health-world-health-day-bokeh-generative-ai_288945-370.jpg?w=740"
               alt="Card image cap">
             <div class="card-body text-center">
@@ -364,7 +226,7 @@
 
 
           <div class="card">
-            <img class="card-img-top img"
+            <img class="card-img img"
               src="https://img.freepik.com/premium-photo/teacher-teaching-kids-classroom-generative-ai_259696-1099.jpg?w=740"
               alt="Card image cap">
             <div class="card-body text-center">
@@ -381,7 +243,7 @@
 
 
           <div class="card">
-            <img class="card-img-top img"
+            <img class="card-img img"
               src="https://img.freepik.com/free-photo/senior-couple-holding-hands-love-bonding-generated-by-ai_188544-33049.jpg?t=st=1704702574~exp=1704706174~hmac=a5bde153d15eee76d5fc51d46b916c3eec340f85a21a2e447178067194dad3c1&w=740"
               alt="Card image cap">
             <div class="card-body text-center">
@@ -403,17 +265,239 @@
   </div>
 
 </div>
+<h1 class="mb-5 text-center" style="color: rgb(9,204,127);font-size: 70px;" data-aos="fade-right"
+  data-aos-anchor-placement="center-bottom" data-aos-duration="6000">EVENTS </h1>
 
 
-<div class="events">
+<div class="e1 p-5">
 
-  <div class="row">
-    <h1 class="mb-5 text-center" style="color: rgb(9,204,127);font-size: 70px;" data-aos="fade-up"
-      data-aos-anchor-placement="center-bottom" data-aos-duration="6000">EVENTS </h1>
 
-      <div class="col-md-12">ghgdchvh</div>
 
+  <div class="overlay"></div>
+  <h3 class="text-white">A fundraising event is an event or campaign whose primary purpose is
+    to raise money for a cause, charity or non-profit organization.And also conduct free service like Medical
+    camps,Blood Donation etc..b <br>
+    You can get full details below</h3>
+  <!-- <h4>Fundraising Events:
+
+      Galas and Charity Balls: Formal events with dinners, entertainment, and auctions.
+      Walks, Runs, or Marathons: Participants raise funds through pledges for completing a walk, run, or marathon.
+      Auctions: Items or experiences are auctioned off, and the proceeds go to the charity.
+      Awareness Events:
+      
+      Conferences and Seminars: Educational events to raise awareness about a specific issue.
+      Awareness Walks or Rallies: Participants gather to walk or rally for a cause, spreading awareness.
+      Community Engagement Events:
+      
+      Community Cleanups: Volunteers clean up local neighborhoods or public spaces.
+      Food Drives: Collecting and distributing food to those in need.
+      Health and Wellness Events:
+      
+      Health Screenings: Providing free or low-cost health screenings to the community.
+      Fitness Challenges: Encouraging healthy habits while raising funds for the charity.
+      Volunteer Events:
+      
+      Volunteer Days: Organizing days where volunteers contribute their time and skills to specific projects.
+      Skill-Building Workshops: Workshops or training sessions for volunteers to enhance their skills.
+      Cultural or Entertainment Events:
+      
+      Concerts or Performances: Entertainment events with proceeds benefiting the charity.
+      Art Exhibitions: Showcasing art with a percentage of sales going to the charity.
+      Collaborative Events:
+      
+      Partnership Events: Collaborating with businesses or other organizations for joint events.
+      Corporate Social Responsibility (CSR) Initiatives: Engaging with corporate partners for philanthropic efforts.</h4> -->
+  <div id="myCarousel" class="carousel slide container " data-bs-ride="carousel">
+    <div class="row">
+      <div class="carousel-inner  w-100">
+        <div class="carousel-item active ">
+          <div class="col-12 col-md-6 col-lg-4 ">
+            <div class="card">
+              <img class="card-img" src="https://thumbs.dreamstime.com/b/medical-camp-13742635.jpg?w=768"
+                alt="Card image cap">
+              <div class="card-body text-center text-center">
+                <h5 class="card-title">Free Medical Camps</h5>
+                <p class="card-text">Aim to bring awareness amongst the
+                  people who have no access to basic healthcare services or knowledge about
+                  the diseases they are suffering from.</p>
+                <a href="#" class="btn btn-primary ">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class=" col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img class="card-img"
+                src="https://img.freepik.com/free-vector/flat-world-organ-donation-day-illustration_52683-86951.jpg?w=360&t=st=1705678825~exp=1705679425~hmac=bf86a451d023e9b59158d21634b8dbaf76962d034725c5649043603d26de9411"
+                alt="Card image cap">
+              <div class="card-body text-center">
+                <h5 class="card-title">Organ Donation Campaigns</h5>
+                <p class="card-text">The purpose of the organ donation drive is to create awareness and increase the
+                  willing participation of adults to sign for organ donation.</p>
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class=" col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img class="card-img"  
+                src="data:image/jpeg; base64,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"
+                alt="Card image cap">
+              <div class="card-body text-center">
+                <h5 class="card-title"> Food Festival</h5>
+                <p class="card-text">A food festival coinciding with a school event is one more popular and effective
+                  method of raising charity funds. Food is usually brought home by the children.</p>
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class=" col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img class="card-img"
+                src="https://img.freepik.com/premium-photo/indian-traditional-culture-beautiful-woman-dancer-exponent-indian-classical-dance-bharatanatyam-tamil-nadu-state_571754-9836.jpg?w=740"
+                alt="Card image cap">
+              <div class="card-body text-center">
+                <h5 class="card-title">Cultural Program</h5>
+                <p class="card-text">A cultural evening is another time-tested method of raising money for a cause. The
+                  performances may be individual or a team (drama, dance), organized at school or neighborhood level.
+                </p>
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class=" col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img class="card-img"
+                src="data:image/jpeg;base64,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"
+                alt="Card image cap">
+              <div class="card-body text-center">
+                <h5 class="card-title">Charity Auction:</h5>
+                <p class="card-text">Collect donated items from local businesses and individuals, then host an auction.
+                  Bidders can compete for the items, and the money raised goes to the charity trustauction
+                </p>
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class=" col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img class="card-img" src="{% static 'images/close-up-people-holding-apples-bag.jpg' %}"
+                alt="Card image cap">
+              <div class="card-body text-center">
+                <h5 class="card-title">Free Food </h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class=" col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img class="card-img"
+                src="https://img.freepik.com/free-photo/close-up-hand-collecting-bottle_23-2149181971.jpg?size=626&ext=jpg&ga=GA1.1.1619967319.1699450871&semt=ais"
+                alt="Card image cap">
+              <div class="card-body text-center">
+                <h5 class="card-title">Community Cleanup Day</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class=" col-12 col-md-6 col-lg-4">
+            <div class="card">
+              <img class="card-img"
+                src="https://img.freepik.com/free-photo/side-view-people-listening-music_23-2149734957.jpg?size=626&ext=jpg&ga=GA1.1.1619967319.1699450871&semt=ais"
+                alt="Card image cap">
+              <div class="card-body text-center">
+                <h5 class="card-title">Charity Concert Livestream:</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button btn-light" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </div>
 </div>
+
+
+<section class="pt-50 pb-100 pt-xs-20 pb-xs-20 pt-sm-20 pb-sm-20 vision_mision_sec"data-aos="fade-up" data-aos-duration="6000">
+  <h1 class="mb-5 text-center" style="color: rgb(9,204,127);font-size: 70px;">PROJECTS</h1>
+  <div class="container">
+  <div class="row align-self-center outer_wrapper">
+  <div class="col-lg-5 col-md-5 d-none d-sm-block align-self-center image_content">
+  <img style="border-radius: 5px;width: 500px;" src="https://img.freepik.com/premium-photo/conference-hall-seminar-room-with-attendee-background_157125-12999.jpg?w=826" alt />
+  </div>
+  <div class="col-lg-7 col-md-7 d-lg-block d-md-block align-self-center desc_content">
+  <h2 class="montextralight mt-4 color-blue heading">
+  Lend a helping hand to Poor</h2>
+  <div class="text-left content_wrap">
+  <p>We are doing several projects works that helpfull to poor people to get security.Such  as <strong>Slum development projects,Building houses,Local business startsup for house wives</strong> Participating in community service projects is a great way to give back to your community. In some cases, working on these types of projects can involve activities that require you to raise money, but not always. Some of these types of projects simply require time and a commitment to sharing your skills and abilities to improve the community where you live or to make life a little better for someone who is less fortunate than you are..</p>
+  </div>
+
+  </div>
+  <div class="row mb-20 vision_item">
+    <div class="col-lg-5 offset-2 col-md-5 col-sm-12 v_item">
+    <h4>Our Vision</h4>
+    <p class="desc">No Child in India shall be deprived of education because of hunger</p>
+    </div>
+    <div class="col-lg-4 offset-2 col-md-4 col-sm-12 v_item">
+    <h4>Our Mission</h4>
+    <p class="desc">To feed 3 Million Children Everyday by 2025</p>
+    </div>
+    </div>
+    <div class="col-6 p-0">
+      <a href="/about-us/" class="btn btn_readMore  m-4">Read More</a>
+      </div>
+  </div>
+  </div>
+  </section>
+  <section class="about" data-aos="fade-up" data-aos-duration="6000">
+    
+
+<div class="abt">
+  <h1 class="mb-5 text-center" style="color: rgb(247, 248, 248);font-size: 70px;" 
+  >About Us </h1>
+  <div class="overlay"></div>
+<h4 class="text-center text-white">This is a  Foundation is a youth led organization working on empowering the underprivileged section of our society. .Foundation focused its interventions on issues concerning youth and children which brought about significant changes in their lives in terms of education, health, skill, career and sustainable livelihood.Also works on Environment conservation, women empowerment, Food safety and security, .<br>
+We conduct a survey in local areas to find beneficiaries and make alist of eligible peoples.
+Donars can find beneficiarieseasly from this published list.
+
+</h4>
+
+
+</div>
+  </section>
+
+{% endblock %}
+
+
+{% block js %}
+{{ block.super }}
+<script src="{% static 'js/home.js' %}"></script>
 
 {% endblock %}
