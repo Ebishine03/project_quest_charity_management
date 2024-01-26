@@ -97,7 +97,7 @@ background-color: rgb(221, 231, 226);
   z-index: 0;
   background-attachment: fixed; 
 }
-  .e1 .overlay,.overlay {
+  .e1 .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -314,4 +314,39 @@ transform: translateX(0);
   z-index: -1;  
    background: #02011c;
 
+}
+/* .request .overlay{
+  background: #00a562;
+  opacity: 0.6;
+} */
+/* .request{
+  background-image: url('../images/requestImg.jpg');
+
+  position: relative;
+  background-size: cover;
+  z-index: 0;
+  background-attachment: fixed;
+  height: 500px;
+} */
+
+.request{
+  background-image: url('../images/handCoin.jpg');
+
+  position: relative;
+  background-size: cover;
+  z-index: 0;
+  background-attachment: fixed; 
+  height: 500px;
+  color: #fff;
+}
+.request .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .2;
+    z-index: -1;  
+     background: #e879bc;
+ 
 }
