@@ -13,15 +13,6 @@ def login(request):
 def reset(request):
 
      return render(request,'main/forgot_password.html')
-def CreateUser(request):
-     if request.method=='POST':
-          form=CreateUserForm(request.POST)
-          if form.is_valid():
-               form.save()
-               return HttpResponse('User Created')
-          else:
-               print(form.errors)
-     form=CreateUserForm()
-     return render(request,'register/user_registration.html',{'form':form})
+
 
 

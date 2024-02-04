@@ -46,26 +46,41 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
         <div class="offcanvas-body ">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small nitem ">
             <li class="nav-item ">
-              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              <a class="nav-link active mt-2 " aria-current="page" href="home.html">HOME</a>
             </li>
             <li class="nav-item   ">
-              <a class="nav-link active" aria-current="page" href="#">PROJECTS</a>
+              <a class="nav-link active mt-2 " aria-current="page" href="#prcts">PROJECTS</a>
             </li>
             <li class="nav-item   ">
-              <a class="nav-link active" aria-current="page" href="#">EVENTS</a>
+              <a class="nav-link active mt-2 " aria-current="page" href="#evnt">EVENTS</a>
             </li>
             <li class="nav-item  ">
-              <a class="nav-link active" aria-current="page" href="#">ORAGANIZATIONS</a>
+              <a class="nav-link active mt-2 " aria-current="page" href="#orgs">ORAGANIZATIONS</a>
             </li>
             <li class="nav-item  ">
-              <a class="nav-link active" aria-current="page" href="#">DONATE</a>
+              <a class="nav-link active mt-2 " aria-current="page" href="#donate">DONATE</a>
             </li>
             <li class="nav-item   ">
-              <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+              <a class="nav-link active mt-2 " aria-current="page" href="#help">REQUEST</a>
             </li>
-            <li class="nav-item  ">
-              <a class="nav-link active" aria-current="page" href="{% url 'login' %}">LOGIN</a>
+            <li class="nav-item   ">
+              <a class="nav-link active mt-2 " aria-current="page" href="#abts">ABOUT</a>
             </li>
+ {% if user.is_authenticated %}
+        
+             <li class="nav-item  ">
+               <a class="nav-link active" aria-current="page" href=""><h4 class="text-uppercase mt-0 py-0">{{user.username}}</h4></a>
+             </li>
+        
+{% else %}
+      <li class="nav-item  ">
+          <a class="nav-link active mt-2 " aria-current="page" href="{% url 'login' %}">LOGIN</a>
+      </li>
+       <li class="nav-item  ">
+          <a class="nav-link active mt-2 " aria-current="page" href="{% url 'logout' %}">GUEST ID</a>
+        </li> 
+            
+{% endif %}
           </ul>
 
         </div>
@@ -75,7 +90,7 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
     </div> 
   </nav>
   
-  <div style="height: 600px;" id="mycarousel1" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div style="height: 600px;" id="mycarousel1" class="carousel slide " data-bs-ride="carousel">
     
     <div style="height: 600px ;" class="carousel-inner">
       <div class="carousel-item active">
