@@ -10,5 +10,10 @@
       }
    })
  
+function toggleSidebar(ref){
+    document.getElementById("sidebar").classList.toggle('active');
+    // var togglerButton = document.querySelector('.toggle-btn');
+    // togglerButton.classList.add('hidden');
+  }
 
-  
+
