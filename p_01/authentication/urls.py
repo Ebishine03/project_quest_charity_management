@@ -7,7 +7,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('login/',views.user_login,name='login'),
-     path('logout/',views.logout,name='logout'),
+     path('logout/',views.user_logout,name='logout'),
 ]
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 if settings.DEBUG:
