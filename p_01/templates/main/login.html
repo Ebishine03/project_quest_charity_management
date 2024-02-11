@@ -27,7 +27,13 @@
                  
 			{{ form.password }}
 	   </div>
-			
+	   {% if messages %}
+	     <ul class="messages text-danger">
+		 {% for message in messages %}
+		   <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+		 {% endfor %}
+	     </ul>
+	   {% endif %}
 
 			<h3><a class="text-success m-3" href="{% url 'passRst' %}">Forgot your password?</a></h3>
 			<button type="submit" class="ghost m-2 bg-success" id="signIn">Sign In</button>
