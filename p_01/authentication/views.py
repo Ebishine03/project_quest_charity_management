@@ -1,25 +1,26 @@
-from django.shortcuts import render,redirect
-from Employee.forms import LoginForm
-from django.contrib.auth import authenticate, login, logout 
-from django.contrib import messages
 
-# Create your views here.
+from django.shortcuts import render, redirect
+from django.contrib.auth import authenticate, login,logout
+from .forms import LoginForm
+
 def user_login(request):
-      if request.method == 'POST':
-        form = LoginForm(request.POST)
+    if request.method == 'POST':
+        form = LoginForm(request,request.POST)
         if form.is_valid():
             username = form.cleaned_data['username']
             password = form.cleaned_data['password']
+            
             user = authenticate(request, username=username, password=password)
-            if user:
-                login(request, user)  
-                return redirect('home')
-            else:
-                messages.error(request, 'Invalid username or password. Please try again.')
 
-      else:
-        form = LoginForm()
-      return render(request, 'main/login.html', {'form': form})
+            if user is not None:
+                login(request, user)
+                return redirect('home') 
+            else:
+                print('error') 
+    else:
+       pass
+    form = LoginForm()
+    return render(request,'main/login.html', {'form': form})
 def user_logout(request):
     logout(request)
     return redirect('home')
